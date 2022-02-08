@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Supermercado One', cursive;
+    background-image: linear-gradient(to right, #5f11c9, #6a12d2, #7512da, #8012e3, #8b12eb);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 246px;
+    padding: 2px;
+    background-color: gray;
+    border: 2px solid rgb(209, 223, 15);
+    border-radius: 5px;
+    box-shadow: rgba(247, 0, 0, 0.35) 0px 5px 15px;
+}
+.screen{
+    height: 100px;
+    width: inherit;
+    background-color: rgb(39, 39, 39);
+    color:rgb(243, 242, 242);
+}
+.screen > p{
+    height: 30px;
+    text-align: right;
+    padding-right: 10px;
+    width: 100%;
+    
+}
+.num-pad{
+    display: grid;
+    grid-template-areas: 
+                    "a b c d"  
+                    "e f g h"  
+                    "ı j k l" 
+                    "m n o p"
+                    "q q r p";
+    grid-gap: 2px;
+    grid-template-columns: 60px 60px 60px 60px ;
+    grid-template-rows: 60px 60px 60px 60px 60px;
+    margin-top: 10px;
+    font-family: 'Supermercado One', cursive;
+}
+.num-pad > button {
+    font-family: inherit;
+}
+.num-pad > #btn-enter {
+    grid-area: p;
+}
+.num-pad > #btn-0 {
+    grid-area: q;
+}
