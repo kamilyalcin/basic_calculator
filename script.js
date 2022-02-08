@@ -100,7 +100,7 @@ const decimalBtn = document.getElementById('btn-decimal');
 
 
 numberBtns.forEach(numberBtn => numberBtn.addEventListener('click', () => {
-    if(!calculate.firstOperand == '' && calculate.firstOperand.length + calculate.secondOperand.length > 28) {
+    if(!calculate.firstOperand == '' && !calculate.secondOperand == '' && calculate.firstOperand.length + calculate.secondOperand.length > 28) {
         alert('You are working with big numbers!');
         return;
     }
