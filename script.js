@@ -66,6 +66,7 @@ class Calculate {
             this.decide();
             this.secondOperand = '';
             this.firstOperand = this.result;
+            this.result = '';
             operationScreen.innerHTML = this.firstOperand;
         }
     }
