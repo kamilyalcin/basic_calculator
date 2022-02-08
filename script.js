@@ -176,9 +176,4 @@ function resetCalculator() {
     calculate.isOnOperation = false;
     calculate.currentOperation = '';
 }
-function checkOperandSizes () {
-    if(!calculate.firstOperand == '' && !calculate.secondOperand == '' && calculate.firstOperand.length + calculate.secondOperand.length > 28) {
-        alert('You are working with big numbers!');
-        return;
-    }
-}
+
