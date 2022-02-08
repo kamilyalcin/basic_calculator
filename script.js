@@ -104,10 +104,9 @@ numberBtns.forEach(numberBtn => numberBtn.addEventListener('click', () => {
         alert('You are working with big numbers!');
         return;
     }
-    if (!calculate.result == '' && calculate.currentOperation == '') {
-        resetCalculator();
-        operationScreen.innerHTML = operationScreen.innerHTML + numberBtn.innerHTML;
-
+    if(!calculate.firstOperand == '' && !calculate.secondOperand == '' && calculate.firstOperand.length + calculate.secondOperand.length > 28) {
+        alert('You are working with big numbers!');
+        return;
     } else {
         operationScreen.innerHTML = operationScreen.innerHTML + numberBtn.innerHTML;
     }
